@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import GetTitle from './GetTitle.js'
+import GetTitle from './GetTitle';
 
 function App() {
   return (

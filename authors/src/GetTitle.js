@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
+//import axios from 'axios'
 
 export class GetTitle extends Component {
 
     // put constructor here 
 
     // put logic here to request backend... 
-    // some kind of function like ... 
-    // this is requesting information from the server.js file
-    getAuthor = (title) => {
-        axios.get('localhost:3000/book?title='+title)
-    }
+    // some kind of function like this ... this is requesting information from the server.js file
+    // getAuthor = (title) => {
+    //     axios.get('localhost:9000/book?title='+title)
+    // }
 
     render() {
 

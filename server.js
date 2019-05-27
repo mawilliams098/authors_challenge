@@ -1,15 +1,15 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 9000
 
-books = {
-	'1984': 'GeorgeOrwell'
+const book = {
+	'1984': 'George Orwell', 
 }
 
-app.get('/:title', (req, res) => {
-	const ans = books[req.params.title]
+app.get('/book/:title', (req, res) => {
+	const ans = book[req.params.title]
 	res.send(ans)
-});
+})
 
 // part two will have a bunch of different routs... so more app.get()s
 //app.get('/getGeocode:address', (req, res) => {

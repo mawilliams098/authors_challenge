@@ -2,13 +2,17 @@ const express = require('express')
 const app = express()
 const port = 9000
 
+var cors = require('cors');
+app.use(cors());
+
 const book = {
 	'1984': 'George Orwell', 
 }
 
 app.get('/book/:title', (req, res) => {
 	const ans = book[req.params.title]
-	res.send(ans)
+	console.log(ans)
+	res.send({express: ans}) 
 })
 
 // part two will have a bunch of different routs... so more app.get()s
